@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 // const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class Showing extends Model {}
+class Shows extends Model {}
 
-Showing.init(
+Shows.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -16,6 +16,11 @@ Showing.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    show_type:{
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      },
+    }
     genre_id:{
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -25,24 +30,14 @@ Showing.init(
         unique: false,
       },
     },
-    show_id:{
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: 'shows',
-        key: 'id',
-        unique: false,
-      },
-    }
-  },
   {
     
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'showing',
+    modelName: 'shows',
   }
 );
 
-module.exports = Showing;
+module.exports = Shows;
