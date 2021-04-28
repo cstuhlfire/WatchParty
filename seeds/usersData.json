@@ -1,0 +1,24 @@
+[
+  {
+    "first_name": "Brad",
+    "last_name": "Towly",
+    "user_name": "btowly",
+    "email": "btowly@got.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Dean",
+    "last_name": "Winchester",
+    "user_name": "dwinchester",
+    "email": "meandean@supernat.com",
+    "password": "password12345"
+  },
+  {
+    "first_name": "Lorum",
+    "last_name": "Ipsum",
+    "user_name": "lipsum",
+    "email": "lipsum@lipsum.lipsum",
+    "password": "password12345"
+  }
+ 
+]
