@@ -34,3 +34,11 @@ Users.belongsToMany(Parties, {
     unique: false,
   }
 });
+
+module.exports = {
+  Users,
+  PartyLink,
+  Parties,
+  Showing,
+  Genres
+}
