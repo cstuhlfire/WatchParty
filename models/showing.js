@@ -18,22 +18,17 @@ Showing.init(
     },
     genre_id:{
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       references: {
         model: 'genres',
         key: 'id',
         unique: false,
       },
     },
-    show_id:{
+    show_type:{
       type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: 'shows',
-        key: 'id',
-        unique: false,
+      allowNull: true,
       },
-    }
   },
   {
     

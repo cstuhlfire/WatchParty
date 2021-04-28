@@ -1,7 +1,7 @@
 const Users = require('./Users');
 const PartyLink = require('./PartyLink');
 const Parties = require('./Parties');
-const Shows = require('./Showing');
+const Showing = require('./Showing');
 const Genres = require('./Genres');
 
 // Showing have Genres
