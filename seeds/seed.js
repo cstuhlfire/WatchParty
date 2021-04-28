@@ -15,7 +15,12 @@ const seedDatabase = async () => {
   for (const genre of genresData) {
     await Genres.create({
       ...genre,
-      //user_id: users[Math.floor(Math.random() * users.length)].id,
+    });
+  }
+
+  for (const showing of showingData) {
+    await Showing.create({
+      ...showing,
     });
   }
 
