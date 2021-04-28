@@ -1,19 +1,19 @@
 const Users = require('./Users');
 const PartyLink = require('./PartyLink');
 const Parties = require('./Parties');
-const Shows = require('./Shows');
+const Shows = require('./Showing');
 const Genres = require('./Genres');
 
-// Shows have Genres
-// Shows.belongsTo(Genres, {
+// Showing have Genres
+// Showing.belongsTo(Genres, {
 //   foreignKey: 'show_id',
 // });
 
-// Parties.belongsTo(Shows, {
+// Parties.belongsTo(Showing, {
 //   foriegnKey: "show_id",
 // });
 
-// Shows.hasMany(Parties, {
+// Showing.hasMany(Parties, {
 //   foriegnKey: "show_id",
 // });
 
