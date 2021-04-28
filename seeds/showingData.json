@@ -1,0 +1,18 @@
+[
+  {
+    "show_name": "Family Guy",
+    "genre_id": 8, 
+    "show_type": "Televison"
+  },
+  {
+    "show_name": "Flash",
+    "genre_id": 1, 
+    "show_type": "Televison"
+  },
+  {
+    "show_name": "Nobody",
+    "genre_id": 1, 
+    "show_type": "Movie"
+  }
+  
+]
