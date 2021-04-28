@@ -3,6 +3,7 @@ const { Users, Showing, PartyLink, Parties, Genres } = require('../models');
 
 const genresData = require('./genresData.json');
 const usersData = require('./usersData.json');
+const showingData = require('./showingData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
