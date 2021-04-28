@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS watchparty_db;
-CREATE DATABASE watchparty_db;
+DROP DATABASE IF EXISTS crowdfund_db;
+CREATE DATABASE crowdfund_db;
