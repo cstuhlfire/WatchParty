@@ -27,7 +27,7 @@ Parties.init(
     show_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'showing',
+        model: 'shows',
         key: 'id',
         unique: false,
       },
