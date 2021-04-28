@@ -1,0 +1,21 @@
+[
+  {
+    "party_name": "Clown Party",
+    "party_time": "10-25-2021",
+    "stream_link": "",
+    "show_id": "2"
+  },
+  {
+    "party_name": "Family Movie Night",
+    "party_time": "06-27-2021 2pm",
+    "stream_link": "youtube.com",
+    "show_id": "3"
+  },
+  {
+    "party_name": "History Party",
+    "party_time": "05-10-2021 4pm",
+    "stream_link": "",
+    "show_id": "1"
+  }
+
+]
