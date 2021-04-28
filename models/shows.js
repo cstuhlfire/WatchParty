@@ -20,8 +20,7 @@ Shows.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       },
-    }
-    genre_id:{
+    genre_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
@@ -30,8 +29,8 @@ Shows.init(
         unique: false,
       },
     },
+  },
   {
-    
     sequelize,
     timestamps: false,
     freezeTableName: true,
