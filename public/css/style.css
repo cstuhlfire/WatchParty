@@ -1,24 +1,22 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
+
+.hero-section {
+  background: "/assets/OMSBG12.mov" 50% no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.no-button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
-  text-decoration: none;
-  font-size: 100%;
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
-}
-
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
-}
