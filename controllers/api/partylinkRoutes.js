@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const { PartyLink } = require('../../models');
+const { PartyLink, Users, Parties } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.get('/', async (req, res) => {
 
-  res.render('homepage');
+  res.render('join');
   });
 
 module.exports = router;
