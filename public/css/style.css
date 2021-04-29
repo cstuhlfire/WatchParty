@@ -1,22 +1,39 @@
+/* Style the video: 100% width and height to cover the entire window */
+#my-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 
-.hero-section {
-  background: "/assets/OMSBG12.mov" 50% no-repeat;
-  background-size: cover;
-  height: 100vh;
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 45px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 55px;
+}
+
+.content-align {
   text-align: center;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.hero-section .hero-section-text {
-  color: #fefefe;
-  text-shadow: 1px 1px 2px #0a0a0a;
+/* Style the button used to pause/play the video */
+.my-btns {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
 }
 
+.my-btns:hover {
+  background: #ddd;
+  color: black;
+}
