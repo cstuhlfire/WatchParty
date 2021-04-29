@@ -5,10 +5,10 @@ const partiesRoutes = require('./partiesRoutes');
 const partylinkRoutes = require('./partylinkRoutes');
 const showingRoutes = require('./showingRoutes');
 
-router.use('/users', usersRoutes);
+router.use('/profile', usersRoutes);
 router.use('/genres', genresRoutes);
-router.use('/parties', partiesRoutes);
-router.use('/partylink', partylinkRoutes);
+//router.use('/create', partiesRoutes);
+router.use('/link', partylinkRoutes);
 router.use('/showing', showingRoutes);
 
 
