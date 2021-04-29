@@ -72,7 +72,16 @@
 .foundation-5-top-bar .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after {
   border-color: #fefefe transparent transparent;
 }
-
-
-
 /* Top Navigation Bar end */
+
+
+/* Join table start */
+
+/* Joint table end */
+
+/* Custom styling start */
+.my-feature-container {
+  margin-top: 3%;
+}
+
+/* Custom styling end */
