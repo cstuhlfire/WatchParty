@@ -12,14 +12,6 @@ PartyLink.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    host_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'users',
-        key: 'id',
-        unique: false,
-      },
-    },
     party_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -38,7 +30,6 @@ PartyLink.init(
     },
   },
   {
- 
     sequelize,
     timestamps: false,
     freezeTableName: true,

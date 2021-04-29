@@ -16,11 +16,7 @@ Users.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    first_name: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    last_name: {
+    name: {
       type: DataTypes.STRING,
       allowNull: true,
     },
