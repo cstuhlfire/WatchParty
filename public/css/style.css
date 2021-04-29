@@ -1,3 +1,9 @@
+:root {
+  /* --my-background: #d8e1e7; */
+  --nav-background: white;
+  --my-dark-grey: rgb(116, 115, 115);
+}
+
 /* Style the video: 100% width and height to cover the entire window */
 #my-video {
   position: fixed;
@@ -38,50 +44,52 @@
   color: black;
 }
 
-/* Top Navigation Bar start*/
 
-.foundation-5-top-bar {
-  background: #333;
-  color: #fefefe;
+/* For work feature block start */
+.work-feature-block {
+  padding: 10px 0;
+  /* border-top: 1px solid #cacaca; */
+  border-bottom: 1px solid #cacaca;
 }
 
-.foundation-5-top-bar .menu {
-  background: #333;
+.work-feature-block-image {
+  display: block;
+  margin: auto;
+  padding: 10px 0;
+}
+/* Work feature block end */
+
+
+/* Custom feature styling start */
+
+.my-hero-container {
+  top: 10%;  
+  float: none;
+  position: absolute;
+  text-align: center;
+  margin: 5px auto;
+  bottom: 35px;
 }
 
-.foundation-5-top-bar .menu a {
-  color: #fefefe;
+.my-htext {
+  color: var(--my-dark-grey);
+  margin: 0px; 
 }
 
-.foundation-5-top-bar .is-dropdown-submenu {
-  border: 0;
-}
-
-.foundation-5-top-bar .is-dropdown-submenu-item.opens-right a::after {
-  border-color: transparent transparent transparent #fefefe;
-}
-
-.foundation-5-top-bar .js-drilldown-back > a::before {
-  border-color: transparent #fefefe transparent transparent;
-}
-
-.foundation-5-top-bar .is-drilldown-submenu-parent > a::after {
-  border-color: transparent transparent transparent #fefefe;
-}
-
-.foundation-5-top-bar .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after {
-  border-color: #fefefe transparent transparent;
-}
-/* Top Navigation Bar end */
-
-
-/* Join table start */
-
-/* Joint table end */
-
-/* Custom styling start */
 .my-feature-container {
-  margin-top: 3%;
+  color: var(--my-dark-grey);
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.my-feature {
+  color: var(--my-dark-grey);
+}
+
+
+.my-links {
+  color: var(--my-dark-grey);
+  text-decoration: underline;
 }
 
 /* Custom styling end */
