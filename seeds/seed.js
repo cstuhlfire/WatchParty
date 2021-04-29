@@ -34,7 +34,7 @@ const seedDatabase = async () => {
   }
 
   for (const partylink of partylinkData) {
-    await Partylink.create({
+    await PartyLink.create({
       ...partylink,
     });
   }
