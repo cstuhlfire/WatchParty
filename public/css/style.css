@@ -92,4 +92,8 @@
   text-decoration: underline;
 }
 
+.my-table-header {
+  background-color: lightgrey;
+}
+
 /* Custom styling end */
