@@ -17,7 +17,9 @@ router.get('/', async (req, res) => {
 router.get('/join', async (req, res) => {
   try {
       // Get all parties
-      const partyData = await Parties.findAll({});
+      const partyData = await Parties.findAll({
+ 
+      });
   
       // Serialize data so the template can read it
       const parties = partyData.map((party) => party.get({ plain: true }));

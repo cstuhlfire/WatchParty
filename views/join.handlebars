@@ -6,14 +6,14 @@
   <div class="work-feature-block row my-feature">
     <div class="columns medium-12">
       <h4>Title</h4>
-      <table>
-        <thead>
+      <table class="hover">
+        <thead class="my-table-header">
           <tr>
             <th width="20">Date</th>
             <th width="100">Date</th>
             <th width="400">Party Name</th>
             <th width="200">Host</th>
-            <th width="250">Join</th>
+            <th width="275">Join</th>
           </tr>
         </thead>
 
@@ -23,7 +23,7 @@
             <td>{{format_date party.party_time}}</td>
             <td>{{format_time party.party_time}}</td>
             <td>{{party.party_name}}</td>
-            <td>Content Goes Here</td>
+            <td>{{party.users.name}}</td>
             <td>Content Goes Here</td>
           </tr>
           {{/each}}
