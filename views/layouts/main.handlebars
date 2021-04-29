@@ -8,57 +8,48 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/navbar.css"/>
 
   </head>
 
   <body>
   {{!-- Navbar start --}}
 
-    <div class="top-bar foundation-5-top-bar">
+    <div class="top-bar ">
       <div class="top-bar-title">
         <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
           <button class="menu-icon" type="button" data-toggle></button>
         </span>
-        <strong>Site Title</strong>
+        
+        <strong>Watch Party</strong>
+      
       </div>
-      <div id="responsive-menu">
+      <div id="responsive-menu my-menu">
         <div class="top-bar-left">
           <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown" data-auto-height="true" data-animate-height="true">
-            <li>
-              <a href="#">One</a>
-              <ul class="menu">
-                <li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li>
-                  <a href="#">Three</a>
-                  <ul class="menu">
-                    <li><a href="#">One</a></li>
-                    <li><a href="#">Two</a></li>
-                    <li>
-                      <a href="#">Three</a>
-                      <ul class="menu">
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
+          
+              
+            <li><a href="">Home</a></li>
+            <li><a href="">Create Party</a></li>
+            <li><a href="">Join Party</a></li>
+            <li><a href="">My Watch List</a></li>
+            <li><a href="">Profile</a></li>
+              
+        
+
+
+          {{!-- Home     Create Party   Join party     My Watch List   Profile                         Login --}}
+
           </ul>
         </div>
         <div class="top-bar-right">
           <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
+
+          
+          <li><a href="#">login</a></li>
           </ul>
         </div>
       </div>
-    </div>
-
 
 
 {{!-- Navbar end --}}
