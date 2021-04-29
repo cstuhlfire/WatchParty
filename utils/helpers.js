@@ -4,9 +4,14 @@ module.exports = {
     return date.toLocaleDateString();
   },
   format_time: (date) => {
-    let time =  date.getHours()+":"+date.getMinutes();
-    // convert to 12 hour clock
+    // convert to 12 hour clock 
+    if (date.getHours() >= 13){
+      date.getHours()-12 + ":"+date.getMinutes()+pm;
+    } else {
+      date.getHours()+":"+date.getMinutes()+am;
+    }
     return time;
+
   }
  
 };
