@@ -7,52 +7,27 @@
     <title>Watch Party</title> 
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/navbar.css"/>
+    <link rel="stylesheet" href="/css/style.css" />
 
   </head>
 
   <body>
-  {{!-- Navbar start --}}
-
-    <div class="top-bar ">
-      <div class="top-bar-title">
-        <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-          <button class="menu-icon" type="button" data-toggle></button>
-        </span>
-        
-        <strong>Watch Party</strong>
-      
-      </div>
-      <div id="responsive-menu my-menu">
-        <div class="top-bar-left">
-          <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown" data-auto-height="true" data-animate-height="true">
-          
-              
-            <li><a href="">Home</a></li>
-            <li><a href="">Create Party</a></li>
-            <li><a href="">Join Party</a></li>
-            <li><a href="">My Watch List</a></li>
-            <li><a href="">Profile</a></li>
-              
-        
-
-
-          {{!-- Home     Create Party   Join party     My Watch List   Profile                         Login --}}
-
+  {{!-- Navbar --}}
+  <header class="subnav-hero-section my-hero">
+          <div class="my-hero-container">
+          <h2 class="subnav-hero-headling my-heading">Watch Party</h2>
+          </div>
+          <ul class="subnav-hero-subnav">
+            <li><a href="/" class="is-active">Home</a></li>
+            <li><a href="/create">Create a Party</a></li>
+            <li><a href="/join">Join a Party</a></li>
+            <li><a href="/watchlist">My Watch List</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="#">Login</a></li>
           </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-
-          
-          <li><a href="#">login</a></li>
-          </ul>
-        </div>
-      </div>
-
-
-{{!-- Navbar end --}}
+        </header>
+  {{!-- Navbar end --}}
 
     <main>
         {{{ body }}}

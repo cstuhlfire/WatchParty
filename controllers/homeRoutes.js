@@ -19,5 +19,14 @@ router.get('/create', async (req, res) => {
     res.render('create');
 });
 
+router.get('/profile', async (req, res) => {
+
+    res.render('profile');
+});
+
+router.get('/watchlist', async (req, res) => {
+
+    res.render('watchlist');
+});
 
 module.exports = router;

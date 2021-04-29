@@ -1,3 +1,78 @@
-.my-menu a{
+.my-menu ul li a {
     color: darkgrey;
 }
+
+/* Hero navbar */
+
+/* For hero block */
+.subnav-hero-section {
+    text-align: center;
+    background: var(--nav-background);
+    background-size: cover;
+    position: relative;
+    overflow: visible;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 130px;
+    border-bottom: solid;
+  }
+  
+  .subnav-hero-section .subnav-hero-headline {
+    color: var(--my-dark-grey);
+  }
+  
+  .subnav-hero-subnav {
+    float: none;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .subnav-hero-subnav li {
+    float: none;
+    display: inline-block;
+  }
+  
+  .subnav-hero-subnav li a {
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    color: var(--my-dark-grey);
+    text-transform: none;
+    display: block;
+    font-weight: none;
+    letter-spacing: 1px;
+    transition: all .35s ease-in-out;
+  }
+  
+  .subnav-hero-subnav li a.is-active {
+    background: rgba(254, 254, 254, 0.15);
+  }
+  
+  .subnav-hero-subnav li a:hover {
+    background: var(--my-dark-grey);
+    color: white;
+  }
+
+  .my-hero-container {
+    top: 10%;  
+    float: none;
+    position: absolute;
+    text-align: center;
+    margin: 5px auto;
+    bottom: 35px;
+  }
+  
+  .my-heading {
+    color: var(--my-dark-grey);
+  }
+
+/* Hero navbar end */
