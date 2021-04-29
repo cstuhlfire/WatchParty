@@ -17,17 +17,29 @@ Parties.init(
       allowNull: false,
     },
     party_time: {
-      type: DataTypes.STRING,
+      type: DataTypes.DATE,
       allowNull: true,
+      defaultValue: DataTypes.NOW,
     },
     stream_link: {
       type: DataTypes.STRING,
       allowNull: true,
     },
-    show_id: {
+    show_name: {
+      type: DataTypes.STRING,
+     },
+    show_type:{
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    genre_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    host_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'showing',
+        model: 'users',
         key: 'id',
         unique: false,
       },

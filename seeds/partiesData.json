@@ -1,21 +1,27 @@
 [
   {
     "party_name": "Clown Party",
-    "party_time": "10-25-2021",
     "stream_link": "",
-    "show_id": "2"
+    "show_name": "Cupcake Wars",
+    "show_type": "Television Show",
+    "genre_name": "Cooking",
+    "host_id": 2
   },
   {
-    "party_name": "Family Movie Night",
-    "party_time": "06-27-2021 2pm",
-    "stream_link": "youtube.com",
-    "show_id": "3"
+    "party_name": "Family Guy Party",
+    "stream_link": "",
+    "show_name": "Family Guy",
+    "show_type": "Television Show",
+    "genre_name": "Comedy",
+    "host_id": 3
   },
   {
-    "party_name": "History Party",
-    "party_time": "05-10-2021 4pm",
+    "party_name": "Action Movie Night",
     "stream_link": "",
-    "show_id": "1"
+    "show_name": "Nobody",
+    "show_type": "Movie",
+    "genre_name": "Action",
+    "host_id": 1
   }
 
 ]

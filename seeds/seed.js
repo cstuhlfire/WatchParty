@@ -1,9 +1,9 @@
 const sequelize = require('../config/connection');
-const { Users, Showing, PartyLink, Parties, Genres } = require('../models');
+const { Users, PartyLink, Parties, Genres } = require('../models');
 
 const genresData = require('./genresData.json');
 const usersData = require('./usersData.json');
-const showingData = require('./showingData.json');
+// const showingData = require('./showingData.json');
 const partiesData = require('./partiesData.json');
 const partylinkData = require('./partylinkData.json');
 
@@ -21,11 +21,11 @@ const seedDatabase = async () => {
     });
   }
 
-  for (const showing of showingData) {
-    await Showing.create({
-      ...showing,
-    });
-  }
+  // for (const showing of showingData) {
+  //   await Showing.create({
+  //     ...showing,
+  //   });
+  // }
 
   for (const party of partiesData) {
     await Parties.create({
