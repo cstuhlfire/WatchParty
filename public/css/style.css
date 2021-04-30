@@ -167,8 +167,9 @@
 
 
 .social-links {
-  background: #1d92cf;
+  background:var(--my-dark-grey);
   padding: 2rem 0 1rem;
+  box-shadow: rgb(116, 115, 115);
 }
 
 .social-links a {
