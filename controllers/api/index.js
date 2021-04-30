@@ -4,7 +4,7 @@ const genresRoutes = require('./genresRoutes');
 const partiesRoutes = require('./partiesRoutes');
 const partylinkRoutes = require('./partylinkRoutes');
 
-router.use('/profile', usersRoutes);
+router.use('/users', usersRoutes);
 router.use('/genres', genresRoutes);
 router.use('/create', partiesRoutes);
 router.use('/link', partylinkRoutes);
