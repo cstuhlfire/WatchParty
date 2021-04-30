@@ -37,11 +37,20 @@
   color: #fff;
   cursor: pointer;
   margin: 5px;
+  
+  box-shadow:rgb(116, 115, 115);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 .my-btns:hover {
   background: #ddd;
   color: black;
+}
+
+.my-brns:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
 

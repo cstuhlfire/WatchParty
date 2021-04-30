@@ -7,6 +7,25 @@ let yyyy = today.getFullYear();
 
 today = yyyy + '-' + mm + '-' + dd + 'T12:00';
 
-console.log(today);
 //dateControl.value = '2021-04-30T:30';
 dateControl.value = today;
+
+// Create event listener for create party.
+let btnEl = document.querySelector(".btn-create-party");
+
+
+// Functions
+function getScreenValues(event){
+    let partyName = document.getElementById("party-name").value.trim();
+    let partyShow = document.getElementById("party-show").value.trim();
+    let showType = document.getElementByID("show-type").value;
+
+
+    console.log(showType);
+
+
+}
+
+
+// Event listener
+btnEl.addEventListener("click", getScreenValues);
