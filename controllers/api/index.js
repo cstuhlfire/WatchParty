@@ -6,7 +6,7 @@ const partylinkRoutes = require('./partylinkRoutes');
 
 router.use('/users', usersRoutes);
 router.use('/genres', genresRoutes);
-router.use('/create', partiesRoutes);
+router.use('/parties', partiesRoutes);
 router.use('/link', partylinkRoutes);
 
 module.exports = router;

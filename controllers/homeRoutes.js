@@ -39,7 +39,7 @@ router.get('/join', async (req, res) => {
     }
 });
 
-router.get('/create', async (req, res) => {
+router.get('/parties', async (req, res) => {
 
     res.render('create');
 });

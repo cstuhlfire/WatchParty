@@ -19,7 +19,7 @@ function createHandler(event) {
   event.preventDefault();
   event.stopPropagation();
 
-  document.location.assign('/create');
+  document.location.assign('/parties');
 };
   
 
