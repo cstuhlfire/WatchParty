@@ -136,6 +136,46 @@
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
+.btn-login {
+  background-color: var(--my-dark-grey);
+  color: white;
+  padding: 3% 10% 3% 10%;
+  margin-top: 27%;
+  box-shadow: rgb(116, 115, 115);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.btn-login:hover {
+  background-color: grey;
+  color: white;
+}
+
+.btn-login:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.btn-signup {
+  background-color: var(--my-dark-grey);
+  color: white;
+  padding: 3% 10% 3% 10%;
+  margin-top: 10%;
+  box-shadow: rgb(116, 115, 115);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.btn-signup:hover {
+  background-color: grey;
+  color: white;
+}
+
+.btn-signup:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
 .btn-join-party {
   background-color: var(--my-dark-grey);
   color: white;
