@@ -37,10 +37,10 @@
   color: #fff;
   cursor: pointer;
   margin: 5px;
-  
-  box-shadow:rgb(116, 115, 115);
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+  box-shadow: rgb(116, 115, 115);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .my-btns:hover {
@@ -49,10 +49,9 @@
 }
 
 .my-brns:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-              inset 2px 2px 3px rgba(0, 0, 0, .6);
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
-
 
 /* For work feature block start */
 .work-feature-block {
@@ -68,11 +67,10 @@
 }
 /* Work feature block end */
 
-
 /* Custom feature styling start */
 
 .my-hero-container {
-  top: 10%;  
+  top: 10%;
   float: none;
   position: absolute;
   text-align: center;
@@ -82,7 +80,7 @@
 
 .my-htext {
   color: var(--my-dark-grey);
-  margin: 0px; 
+  margin: 0px;
 }
 
 .my-feature-container {
@@ -94,7 +92,6 @@
 .my-feature {
   color: var(--my-dark-grey);
 }
-
 
 .my-links {
   color: var(--my-dark-grey);
@@ -124,9 +121,9 @@
   color: white;
   padding: 3% 10% 3% 10%;
   margin-top: 30%;
-  box-shadow:rgb(116, 115, 115);
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+  box-shadow: rgb(116, 115, 115);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .btn-create-party:hover {
@@ -135,8 +132,8 @@
 }
 
 .btn-create-party:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-              inset 2px 2px 3px rgba(0, 0, 0, .6);
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .btn-join-party {
@@ -144,9 +141,9 @@
   color: white;
   padding: 3% 10% 3% 10%;
   /* margin-top: 30%; */
-  box-shadow:rgb(116, 115, 115);
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+  box-shadow: rgb(116, 115, 115);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .btn-join-party:hover {
@@ -155,7 +152,61 @@
 }
 
 .btn-join-party:active {
-  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-              inset 2px 2px 3px rgba(0, 0, 0, .6);
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
+
+.btn-invite-party {
+  background-color: var(--my-dark-grey);
+  color: white;
+  padding: 3% 10% 3% 10%;
+  box-shadow: rgb(116, 115, 115);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+.social-links {
+  background: #1d92cf;
+  padding: 2rem 0 1rem;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.social-links i.fa {
+  font-size: 1.4rem;
+  padding-right: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .social-links {
+    padding: 2rem 0;
+  }
+  .social-links i.fa {
+    font-size: 2rem;
+    display: block;
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+  }
+  .social-links a {
+    font-weight: bold;
+  }
+  .social-links .columns {
+    margin: 1rem 0;
+  }
+  .social-links .mobile-stack {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+
 /* Custom styling end */
