@@ -1,43 +1,66 @@
-<div class="my-header">
-  <h3>Login</h3>
-</div>
-<div class="row">
-  <div class="col-md-6">
-    <h3>Signin</h3>
-    
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">Email:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">Password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-light" type="submit">Login</button>
-      </div>
-    </form>
-  </div>
-  <div class="col-md-6">
-     <h3>Signup</h3>
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="name-signup">Name:</label>
-        <input class="form-input" type="text" id="name-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">Email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">Password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-light" type="submit">Signup</button>
-      </div>
-    </form>
-  </div>
-</div>
+<div id="my-work" class="my-feature-container">
+    <div class="work-feature-block row my-feature">
+      <h3>Login</h3>
+    </div>
 
+    <div class="work-feature-block row my-feature">
+      <div class="columns medium-6 my-create-divider">
+        <h4 class="my-text-color">Signin</h4>
+
+          <form>
+            <div class="grid-container">
+              <div class="grid-x grid-padding-x">
+                <div class="medium-10 cell">
+
+                    <label for="email-login">Email:</label>
+                    <input class="form-input" type="text" id="email-login" />
+
+                    
+                    <label for="password-login">Password:</label>
+                    <input class="form-input" type="password" id="password-login" />
+                    
+                    <input class="btn-login" type="button" value="Login" onclick="">
+
+                </div>
+
+              </div>
+            </div>
+          </form>    
+      </div>
+
+
+
+        <div class="columns medium-6">
+          <h4 class="work-feature-block-header">Signup</h4>
+
+          <form>
+            <div class="grid-container">
+              <div class="grid-x grid-padding-x">
+                <div class="medium-10 cell">
+
+                  <label for="name-signup">Name:</label>
+                  <input class="form-input" type="text" id="name-signup" />
+
+                    
+                  <label for="email-signup">Email:</label>
+                  <input class="form-input" type="text" id="email-signup" />                   
+
+                  <label for="password-signup">Password:</label>
+                  <input class="form-input" type="password" id="password-signup" />
+
+                  <input class="btn-signup" type="button" value="Signup" onclick="">
+
+                </div>
+
+              </div>
+            </div>
+          </form>    
+
+        </div>
+        
+     </div>
+ </div>
+
+
+ 
+<script src="./js/login.js"></script>
