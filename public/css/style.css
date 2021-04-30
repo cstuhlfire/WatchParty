@@ -129,4 +129,24 @@
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
               inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
+
+.btn-join-party {
+  background-color: var(--my-dark-grey);
+  color: white;
+  padding: 3% 10% 3% 10%;
+  /* margin-top: 30%; */
+  box-shadow:rgb(116, 115, 115);
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.btn-join-party:hover {
+  background-color: grey;
+  color: white;
+}
+
+.btn-join-party:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
 /* Custom styling end */

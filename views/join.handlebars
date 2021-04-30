@@ -1,18 +1,18 @@
 <div id="my-container-id" class="my-feature-container">
-    <div class="work-feature-block row my-feature">
-      <h3>Current Watch Parties</h3>
-    </div>
+  <div class="work-feature-block row my-feature">
+    <h3>Current Watch Parties</h3>
+  </div>
 
   <div class="work-feature-block row my-feature">
     <div class="columns medium-12">
       <h4>Title</h4>
-      <table class="hover stack">
+      <table class="stack">
         <thead class="my-table-header">
           <tr>
             <th width="100">Date</th>
             <th width="100">Time</th>
             <th width="265">Party Name</th>
-            <th width="265">Show Name</th>          
+            <th width="265">Show Name</th>
             <th width="175">Host</th>
             <th width="275">Join</th>
           </tr>
@@ -26,7 +26,7 @@
             <td>{{party.party_name}}</td>
             <td>{{party.show_name}}</td>
             <td>{{party.user.name}}</td>
-            <td>Click to join party</td>
+            <td><input class="btn-join-party" type="button" value="Join Party" onclick=""></td>
           </tr>
           {{/each}}
         </tbody>
@@ -37,4 +37,3 @@
 </div>
 
 <script src="/js/join.js"></script>
-
