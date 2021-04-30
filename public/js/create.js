@@ -18,7 +18,7 @@ let btnEl = document.querySelector(".btn-create-party");
 function getScreenValues(event){
     let partyName = document.getElementById("party-name").value.trim();
     let partyShow = document.getElementById("party-show").value.trim();
-    let showType = document.getElementByID("show-type").value;
+    let showType = document.getElementById("show-type").value;
 
 
     console.log(showType);
