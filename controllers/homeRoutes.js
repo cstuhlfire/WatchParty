@@ -51,7 +51,28 @@ router.get('/profile', async (req, res) => {
 
 router.get('/watchlist', async (req, res) => {
 
-    res.render('watchlist');
+  try {
+    // Get all parties
+    const watchlistData = await Parties.findAll({
+      include: [
+        {
+          model: Users,
+        },
+      ],
+    });
+
+    // Serialize data so the template can read it
+    const watchlists = watchlistData.map((watchlist) => watchlist.get({ plain: true }));
+    // res.json(watchlists);
+
+    // Pass serialized data and session flag into template
+    res.render('watchlist', { 
+      watchlists, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
