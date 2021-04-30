@@ -96,4 +96,17 @@
   background-color: lightgrey;
 }
 
+.my-create-divider {
+  border-right: solid;
+  color: lightgrey;
+}
+
+.my-text-color {
+  color: var(--my-dark-grey);
+}
+
+.my-form-input {
+  float: left;
+  margin-right: 20px;
+}
 /* Custom styling end */
