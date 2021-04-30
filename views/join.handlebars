@@ -9,10 +9,11 @@
       <table class="hover">
         <thead class="my-table-header">
           <tr>
-            <th width="20">Date</th>
             <th width="100">Date</th>
-            <th width="400">Party Name</th>
-            <th width="200">Host</th>
+            <th width="100">Time</th>
+            <th width="265">Party Name</th>
+            <th width="265">Show Name</th>          
+            <th width="175">Host</th>
             <th width="275">Join</th>
           </tr>
         </thead>
@@ -23,8 +24,9 @@
             <td>{{format_date party.party_time}}</td>
             <td>{{format_time party.party_time}}</td>
             <td>{{party.party_name}}</td>
-            <td>{{party.users.name}}</td>
-            <td>Content Goes Here</td>
+            <td>{{party.show_name}}</td>
+            <td>{{party.user.name}}</td>
+            <td>Click to join party</td>
           </tr>
           {{/each}}
         </tbody>
