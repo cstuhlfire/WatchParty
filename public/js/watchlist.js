@@ -1,4 +1,3 @@
-console.log("here");
 
 let delBtn = document.querySelector("#my-del");
 
@@ -21,7 +20,7 @@ const delPartyHandler = async (event) => {
 
   };
 
-delBtn.addEventListener('click', delPartyHandler);
+//delBtn.addEventListener('click', delPartyHandler);
 
 
 
