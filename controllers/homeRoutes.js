@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Parties } = require('../models');
+const { Parties, Users } = require('../models');
 const withAuth = require('../utils/auth');
 
 // "/" routes
@@ -18,12 +18,17 @@ router.get('/join', async (req, res) => {
   try {
       // Get all parties
       const partyData = await Parties.findAll({
- 
+        include: [
+          {
+            model: Users,
+          },
+        ],
       });
   
       // Serialize data so the template can read it
       const parties = partyData.map((party) => party.get({ plain: true }));
-  
+
+      //res.json(parties);
       // Pass serialized data and session flag into template
       res.render('join', { 
         parties, 
