@@ -15,10 +15,30 @@ router.post('/', async (req, res) => {
       //user_id: req.session.user_id,
     });
 
-    res.direct('/');
+    res.direct('/watchlist');
     //res.status(200).json(newComment);
   } catch (err) {
     res.status(400).json(err);
+  }
+});
+
+router.delete('/:id', withAuth, async (req, res) => {
+  try {
+    const partyData = await Parties.destroy({
+      where: {
+        id: req.params.id
+        //user_id: req.session.user_id,
+      },
+    });
+
+    if (!partyData) {
+      res.status(404).json({ message: 'No party found with this id!' });
+      return;
+    }
+
+    res.status(200).json(partyData);
+  } catch (err) {
+    res.status(500).json(err);
   }
 });
 

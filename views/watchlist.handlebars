@@ -14,7 +14,8 @@
             <th width="265">Party Name</th>
             <th width="265">Show Name</th>          
             <th width="175">Host</th>
-            <th width="275">Leave Party</th>
+            <th width="150">Leave Party</th>
+            <th width="150">Who's Going</th>
           </tr>
         </thead>
 
@@ -26,7 +27,8 @@
             <td>{{watchlist.party_name}}</td>
             <td>{{watchlist.show_name}}</td>
             <td>{{watchlist.user.name}}</td>
-            <td><input class="btn-join-party" type="button" value="Delete" onclick=""></td>
+            <td><input id="my-del" class="btn-join-party" type="button" value="Delete" data-id="{{watchlist.id}}" onclick=""></td>
+            <td><input class="btn-join-party" type="button" value="Guest List" data-id="{{watchlist.id}}" onclick=""></td>
           </tr>
           {{/each}}
         </tbody>
@@ -36,5 +38,5 @@
   </div>
 </div>
 
-<script src="/js/join.js"></script>
+<script src="/js/watchlist.js"></script>
 

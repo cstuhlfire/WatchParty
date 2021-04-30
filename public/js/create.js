@@ -31,7 +31,7 @@ const getScreenValues = async (event) => {
     let dateString = `${res[0]} ${res[1]}`;
   
     if (partyName) {
-      const response = await fetch(`/api/create`, {
+      const response = await fetch(`/api/parties`, {
         method: 'POST',
         body: JSON.stringify({ "party_name": partyName, 
                                 "party_time": dateString,
@@ -45,11 +45,12 @@ const getScreenValues = async (event) => {
         },
       });
   
-      if (response.ok) {
-        document.location.replace("/watchlist");
-      } else {
-         // document.location.replace("/");
-      }
+      document.location.replace("/watchlist");
+    //   if (response.ok) {
+    //       document.location.replace("/watchlist");
+    //   } else {
+    //      // document.location.replace("/");
+    //   }
     }
   };
 
